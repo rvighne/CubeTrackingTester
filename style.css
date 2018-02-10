@@ -1,0 +1,25 @@
+:root, input {
+	font-family: monospace;
+}
+
+h1 {
+	border-bottom: thin solid;
+}
+
+fieldset {
+	border-width: thin;
+}
+
+fieldset + fieldset {
+	margin-top: 2em;
+}
+
+input[type=number] {
+	width: 8ch;
+}
+
+/* TODO: Not use floating; move #graphics to end (in HTML) again */
+
+#graphics {
+	float: right;
+}

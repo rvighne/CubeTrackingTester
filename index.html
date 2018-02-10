@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<title>Cube Tracking Tester</title>
+<link rel="stylesheet" href="style.css">
+<script src="calc.js"></script>
+<script src="draw.js"></script>
+<script src="init.js"></script>
+
+<h1 id="header">Cube Tracking Tester</h1>
+
+<section id="graphics">
+	<h2>Graphics</h2>
+
+	<h3>Camera view (image)</h3>
+	<p><canvas id="image-graphic"></canvas>
+
+	<h3>Side view (robot)</h3>
+	<p><canvas id="robot-graphic"></canvas>
+
+	<h3>Top view (floor)</h3>
+	<p><canvas id="aerial-graphic"></canvas>
+</section>
+
+<section id="variables">
+	<h2>Variables</h2>
+
+	<h3>Image coordinates (pixels)</h3>
+	<p>
+		<label>X: <input type="number" id="imgCoords-x-input" min="0" step="1"></label>
+		<label>Y: <input type="number" id="imgCoords-y-input" min="0" step="1"></label>
+
+	<h3>Camera angle (degrees)</h3>
+	<p>
+		<label><abbr title="Horizontal">H</abbr>: <input type="number" id="camRay-x-input" min="-180" max="180" step="0.01" value="0"></label>
+		<label><abbr title="Vertical">V</abbr>: <input type="number" id="camRay-y-input" min="-180" max="180" step="0.01" value="0"></label>
+
+	<h3>Cube floor position (inches)</h3>
+	<p>
+		<label>X: <input type="number" id="floorPos-x-input" step="0.01"></label>
+		<label>Y: <input type="number" id="floorPos-y-input" step="0.01"></label>
+</section>
+
+<section id="constants">
+	<h2>Constants</h2>
+
+	<p><label>Image width: <input type="number" id="imgWidth-const" min="0" value="640">px</label>
+	<p><label>Image height: <input type="number" id="imgHeight-const" min="0" value="480">px</label>
+
+	<p><label>Focal length: <input type="number" id="focalLen-const" min="0" value="626.2">px</label>
+	<p><label>Camera inclination: <input type="number" id="inclAngle-const" min="-180" max="180" value="47.955">&deg;</label>
+	<p><label>Camera height: <input type="number" id="camHeight-const" min="0" value="49.375">in</label>
+</section>
